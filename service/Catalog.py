@@ -8,7 +8,7 @@ class Catalog :
     @classmethod
     def add( cls, movie ) :
         with open( f'{ str( cls .path ) }/{ cls .file_name }', 'a', encoding='utf8' ) as file :
-            file .write( f'{ movie }\n' )
+            file .write( f'{ movie .name }\n' )
 
     @classmethod
     def list( cls ) :
